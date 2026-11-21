@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>E 數字｜P2 報告流程與分工</title>
+<style>
+  :root {
+    --ink: #111111; --yellow: #F2C230; --grey: #5C5C5C; --line: #CFCFCF;
+    --hei: "Microsoft JhengHei", "微軟正黑體", sans-serif;
+    --num: "Bahnschrift", "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1920px; height: 1080px; background: #fff; }
+  .slide { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #fff; color: var(--ink); font-family: var(--hei); }
+  .abs { position: absolute; }
+
+  .block { left: 0; top: 0; width: 620px; height: 1080px; background: var(--yellow); }
+  .kicker { left: 72px; top: 72px; font-size: 26px; }
+  .big { left: 48px; top: 150px; font: 700 600px/1 var(--num); letter-spacing: -.04em; }
+  .cap { left: 72px; top: 676px; width: 500px; }
+  .cap h2 { font-size: 56px; font-weight: 700; }
+  .cap p { margin-top: 14px; font-size: 28px; line-height: 1.45; }
+
+  .table { left: 700px; top: 110px; width: 1140px; border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); }
+  .row { display: grid; grid-template-columns: 120px 330px 1fr 230px; align-items: center; height: 100px; border-top: 1px solid var(--line); }
+  .row:first-child { border-top: 0; }
+  .no { font: 700 56px/1 var(--num); }
+  .no.word { font: 700 28px var(--hei); color: var(--grey); }
+  .name { font-size: 36px; font-weight: 700; }
+  .how { font-size: 24px; color: #444; }
+  .who { font-size: 28px; text-align: right; }
+  .row.edge .name { color: #444; }
+
+  .foot { left: 700px; top: 958px; width: 1140px; display: flex; justify-content: space-between; font-size: 18px; line-height: 1.5; color: #444; }
+</style>
+</head>
+<body>
+<section class="slide">
+  <div class="abs block"></div>
+  <div class="abs kicker">報告流程與分工</div>
+  <div class="abs big">6</div>
+  <div class="abs cap">
+    <h2>個儀式</h2>
+    <p>4 位組員，按喪禮發生的先後次序報告。</p>
+  </div>
+
+  <div class="abs table">
+    <div class="row edge"><span class="no word">開場</span><span class="name">佛教怎樣看生死</span><span class="how">生死觀・喪禮的特別之處・流程</span><span class="who">[Presenter]</span></div>
+    <div class="row"><span class="no">01</span><span class="name">臨終助念</span><span class="how">過身後約 8–12 小時，圍住亡者念佛</span><span class="who">[Member A]</span></div>
+    <div class="row"><span class="no">02</span><span class="name">靈堂佈置</span><span class="how">香花素果，不殺生祭祀</span><span class="who">[Member A]</span></div>
+    <div class="row"><span class="no">03</span><span class="name">誦經念佛</span><span class="how">以念佛、誦經代替哭泣</span><span class="who">[Member B]</span></div>
+    <div class="row"><span class="no">04</span><span class="name">出殯</span><span class="how">親友告別・法師開示</span><span class="who">[Member C]</span></div>
+    <div class="row"><span class="no">05</span><span class="name">做七</span><span class="how">每 7 日一次，至第 49 日</span><span class="who">[Member C]</span></div>
+    <div class="row"><span class="no">06</span><span class="name">布施迴向</span><span class="how">帛金轉做善款，貫穿整個喪期</span><span class="who">[Presenter]</span></div>
+    <div class="row edge"><span class="no word">總結</span><span class="name">評價・帶領討論</span><span class="how">六個儀式，一套生死觀</span><span class="who">[Presenter]／全組</span></div>
+  </div>
+
+  <div class="abs foot">
+    <span>資料：本組整理；喪禮次序參考釋果東〈臨終儀軌─佛化奠祭禮儀〉，頁41–45。</span>
+    <span>負責同學：[Presenter]（XXXXXXXXA）</span>
+  </div>
+</section>
+</body>
+</html>

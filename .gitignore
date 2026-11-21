@@ -1,0 +1,22 @@
+# Node / Playwright
+node_modules/
+package-lock.json.bak
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Generated PPTX / PDF outputs & excluded lecture screenshots
+build/deck*.pptx
+build/deck*.pdf
+build/ev/
+build/lecture_pdf_fixed/
+
+# Temp / Office locks
+~$*
+*.tmp
+
+# Environment & secrets
+.env
+.env.*

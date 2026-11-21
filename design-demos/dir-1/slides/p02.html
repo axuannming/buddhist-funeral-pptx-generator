@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>A 經書｜P2 目次</title>
+<style>
+  :root {
+    --paper: #F3F2EE; --ink: #1D1D1F; --indigo: #24324B; --grey: #5E5B55;
+    --ming: "PMingLiU", "新細明體", serif;
+    --kai: "DFKai-SB", "標楷體", serif;
+    --hei: "Microsoft JhengHei", "微軟正黑體", sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1920px; height: 1080px; background: var(--paper); }
+  .slide { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: var(--paper); color: var(--ink); font-family: var(--ming); }
+  .abs { position: absolute; }
+  .v { writing-mode: vertical-rl; }
+
+  /* 版框：左右雙邊（外粗內細） */
+  .frame { left: 80px; top: 56px; width: 1760px; height: 908px; border: 3px solid var(--ink); }
+  .frame::after { content: ""; position: absolute; inset: 7px; border: 1px solid var(--ink); }
+
+  /* 版心 */
+  .banxin { left: 1712px; top: 66px; width: 118px; height: 888px; border-left: 1px solid var(--ink); }
+  .banxin::before { content: ""; position: absolute; left: 6px; top: 0; bottom: 0; border-left: 1px solid var(--ink); }
+  .bx-title { left: 34px; top: 34px; font-size: 34px; letter-spacing: .22em; }
+  .bx-fish { left: 30px; top: 270px; }
+  .bx-sec { left: 41px; top: 344px; font-size: 28px; letter-spacing: .3em; color: var(--grey); }
+  .bx-page { left: 40px; bottom: 30px; font-size: 34px; }
+
+  /* 界欄 */
+  .rule { top: 66px; height: 888px; border-left: 1px solid rgba(29,29,31,.42); }
+
+  .heading { right: 262px; top: 104px; font-size: 104px; letter-spacing: .32em; }
+  .heading-sub { left: 1592px; top: 430px; font-size: 26px; letter-spacing: .18em; color: var(--grey); }
+
+  .entry-title { top: 104px; font-size: 54px; letter-spacing: .1em; line-height: 1; }
+  .entry-sub { top: 236px; font-size: 25px; letter-spacing: .12em; color: var(--grey); line-height: 1; }
+  .who { top: 846px; width: 231px; text-align: center; font: 26px var(--hei); color: var(--indigo); }
+  .who small { display: block; font-size: 17px; color: var(--grey); margin-bottom: 6px; letter-spacing: .3em; }
+
+  .note { left: 84px; top: 986px; width: 1752px; display: flex; justify-content: space-between; font-size: 18px; color: #3E3C38; line-height: 1.6; }
+</style>
+</head>
+<body>
+<section class="slide">
+  <div class="abs frame"></div>
+
+  <!-- 版心：書名・魚尾・篇名・頁次 -->
+  <div class="abs banxin">
+    <div class="abs v bx-title">佛教葬禮</div>
+    <svg class="abs bx-fish" width="58" height="46" viewBox="0 0 58 46"><path d="M0 0H58V46L29 26L0 46Z" fill="#1D1D1F"/></svg>
+    <div class="abs v bx-sec">目次</div>
+    <div class="abs v bx-page">二</div>
+  </div>
+
+  <!-- 界欄：每個條目一欄，由右讀到左 -->
+  <div class="abs rule" style="left:1520px"></div>
+  <div class="abs rule" style="left:1289px"></div>
+  <div class="abs rule" style="left:1058px"></div>
+  <div class="abs rule" style="left:827px"></div>
+  <div class="abs rule" style="left:596px"></div>
+  <div class="abs rule" style="left:365px"></div>
+
+  <div class="abs v heading" style="right:262px">目次</div>
+  <div class="abs v heading-sub">依喪禮的時間次序報告</div>
+
+  <!-- 一 -->
+  <div class="abs v entry-title" style="left:1428px">一　佛教的生死觀</div>
+  <div class="abs v entry-sub" style="left:1362px">生死觀・喪禮特別之處・流程</div>
+  <div class="abs who" style="left:1289px"><small>報告</small>[Presenter]</div>
+  <!-- 二 -->
+  <div class="abs v entry-title" style="left:1197px">二　臨終・靈堂</div>
+  <div class="abs v entry-sub" style="left:1131px">臨終助念・不急搬動遺體・設靈堂</div>
+  <div class="abs who" style="left:1058px"><small>報告</small>[Member A]</div>
+  <!-- 三 -->
+  <div class="abs v entry-title" style="left:966px">三　誦經念佛</div>
+  <div class="abs v entry-sub" style="left:900px">以念佛、誦經代替哭泣</div>
+  <div class="abs who" style="left:827px"><small>報告</small>[Member B]</div>
+  <!-- 四 -->
+  <div class="abs v entry-title" style="left:735px">四　出殯・做七</div>
+  <div class="abs v entry-sub" style="left:669px">法師開示・每七日一次至四十九日</div>
+  <div class="abs who" style="left:596px"><small>報告</small>[Member C]</div>
+  <!-- 五 -->
+  <div class="abs v entry-title" style="left:504px">五　布施行善</div>
+  <div class="abs v entry-sub" style="left:438px">帛金轉做善款・為亡者行善</div>
+  <div class="abs who" style="left:365px"><small>報告</small>[Presenter]</div>
+  <!-- 六 -->
+  <div class="abs v entry-title" style="left:273px">六　總結・評價</div>
+  <div class="abs v entry-sub" style="left:207px">六個儀式・一套生死觀・討論</div>
+  <div class="abs who" style="left:112px"><small>報告</small>[Presenter]／全組</div>
+
+  <div class="abs note">
+    <span>注：分工依本組協議（2026年10月）；報告次序依佛化喪禮流程，見釋果東〈臨終儀軌─佛化奠祭禮儀〉，頁41–45。</span>
+    <span>負責同學：[Presenter]（XXXXXXXXA）</span>
+  </div>
+</section>
+</body>
+</html>
